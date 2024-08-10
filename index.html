@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <link type="text/css" rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div id="appBg">
+            <form name="calculator">
+                <input type="textfield" name="ans" id="ans" value="" autocomplete="off" readonly>
+                <div class="calculator_part" id="sci_calculator_left">
+                    <input type="button" id="mod" value="|x|" onclick="document.calculator.ans.value += '|x|'" class="orange">
+                    </br>
+                    <input type="button" value="n!" onclick="document.calculator.ans.value += 'n!'" class="orange">
+                    </br>
+                    <input type="button" value="ln" onclick="document.calculator.ans.value += 'ln('" class="orange">
+                    </br>
+                    <input type="button" value="X" onclick="document.calculator.ans.value += '*'" class="orange">
+                    </br>
+                    <input type="button" value="/" onclick="document.calculator.ans.value += '/'" class="orange">
+                </div>
+                <div class="calculator_part" id="simple_calculator">
+                    <input type="button" id="x2" class="gray">
+                    <input type="button" id="sqrt" class="gray">
+                    <input type="button" id="left_par" class="gray">
+                    <input type="button" id="right_par" class="gray">
+                    </br>
+                    <input type="button" value="7" onclick="document.calculator.ans.value += '7'" class="gray">
+                    <input type="button" value="8" onclick="document.calculator.ans.value += '8'" class="gray">
+                    <input type="button" value="9" onclick="document.calculator.ans.value += '9'" class="gray">
+                    <input type="button" value="+" onclick="document.calculator.ans.value += '+'" class="orange">
+                    </br>
+                    <input type="button" value="4" onclick="document.calculator.ans.value += '4'" class="gray">
+                    <input type="button" value="5" onclick="document.calculator.ans.value += '5'" class="gray">
+                    <input type="button" value="6" onclick="document.calculator.ans.value += '6'" class="gray">
+                    <input type="button" value="-" onclick="document.calculator.ans.value += '-'" class="orange">
+                    </br>
+                    <input type="button" value="1" onclick="document.calculator.ans.value += '1'" class="gray">
+                    <input type="button" value="2" onclick="document.calculator.ans.value += '2'" class="gray">
+                    <input type="button" value="3" onclick="document.calculator.ans.value += '3'" class="gray">
+                    <input type="button" value="X" onclick="document.calculator.ans.value += '*'" class="orange">
+                    </br>
+                    <input type="button" value="0" onclick="document.calculator.ans.value += '0'" class="gray">
+                    <input type="button" value="C" onclick="document.calculator.ans.value = ''">
+                    <input type="button" id="equal"  value="=">
+                    <input type="button" value="/" onclick="document.calculator.ans.value += '/'" class="orange">
+                </div>
+                <div class="calculator_part" id="sci_calculator_right">
+                    <input type="button" id="e" value="e" onclick="document.calculator.ans.value += 'e'" class="gray">
+                    <input type="button" id="pi"class="gray">
+                    <input type="button" id="i" value="i" onclick="document.calculator.ans.value += 'i'" class="gray">
+                    </br>
+                    <input type="button" value="sin" onclick="document.calculator.ans.value += 'sin('" class="gray">
+                    <input type="button" value="csc" onclick="document.calculator.ans.value += 'csc('" class="gray">
+                    <input type="button" value="sinh" onclick="document.calculator.ans.value += 'sinh('" class="gray">
+                    </br>
+                    <input type="button" value="cos" onclick="document.calculator.ans.value += 'cos('" class="gray">
+                    <input type="button" value="sec" onclick="document.calculator.ans.value += 'sec('" class="gray">
+                    <input type="button" value="cosh" onclick="document.calculator.ans.value += 'cosh('" class="gray">
+                    </br>
+                    <input type="button" value="tan" onclick="document.calculator.ans.value += 'tan('" class="gray">
+                    <input type="button" value="cot" onclick="document.calculator.ans.value += 'cot('" class="gray">
+                    <input type="button" value="tanh" onclick="document.calculator.ans.value += 'tanh('" class="gray">
+                    
+                    </br>
+                    <input type="button" value="" onclick="document.calculator.ans.value += ''" class="gray">
+                    <input type="button" value="C" onclick="document.calculator.ans.value = ''">
+                    <input type="button" value="">
+                    
+                </div>
+                <div style="clear: both;"></div>
+                
+            </form>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
